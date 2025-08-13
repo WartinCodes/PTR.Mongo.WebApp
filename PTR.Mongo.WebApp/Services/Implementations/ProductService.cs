@@ -35,10 +35,9 @@ public class ProductService(IProductRepository productRepository, IMapper mapper
         _productRepository.Delete(id);
     }
 
-    public ProductResponseDto GetByProductId(int productId)
+    public async Task<ProductResponseDto> GetByProductId(int productId)
     {
         Product? product = _productRepository.GetByProductId(productId);
         return _mapper.Map<ProductResponseDto>(product);
     }
-
 }

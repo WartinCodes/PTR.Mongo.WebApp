@@ -7,8 +7,7 @@ public interface IProductService
 {
     IEnumerable<ProductResponseDto> GetAll();
     IEnumerable<ProductResponseDto> GetAllByUserIdAsync(int userId);
-    ProductResponseDto GetByProductId(int productId);
+    Task<ProductResponseDto> GetByProductId(int productId);
     ProductResponseDto Create(CreateProductRequestDto request);
-    //Task<ProductResponseDto> UpdateAsync(UpdateProductRequestDto request, int productId);
     void Delete(int id);
 }
