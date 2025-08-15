@@ -1,4 +1,5 @@
-﻿using PTR.Mongo.WebApp.Entities.Extensions;
+﻿using PTR.Mongo.WebApp.Data;
+using PTR.Mongo.WebApp.Entities.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
