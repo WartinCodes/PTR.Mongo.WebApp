@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_PATH: PTR.Mongo.WebApp/PTR.Mongo.WebApp/PTR.Mongo.WebApp.csproj
+  PROJECT_PATH: PTR.Mongo.WebApp/PTR.Mongo.WebApp.csproj
 
 jobs:
   build:
